@@ -19,9 +19,4 @@
     <None Include="$(ProjectName).targets" />
     <None Include="$(ProjectName).nuspec" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\dummy.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>

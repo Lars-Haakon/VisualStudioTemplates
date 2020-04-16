@@ -92,9 +92,6 @@
     <None Include="$(ProjectName).props" />
     <None Include="$(ProjectName).targets" />
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\dummy.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

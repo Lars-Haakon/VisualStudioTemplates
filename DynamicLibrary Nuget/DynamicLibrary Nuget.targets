@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <ItemGroup>
-        <$(ProjectName)DLL Include="$(MSBuildThisFileDirectory)native\lib\win64\$(Configuration)\$(ProjectName).dll;$(MSBuildThisFileDirectory)native\lib\win64\$(Configuration)\$(ProjectName).pdb" />
+        <Binaries Include="$(MSBuildThisFileDirectory)native\lib\win64\$(Configuration)\$(ProjectName).dll;$(MSBuildThisFileDirectory)native\lib\win64\$(Configuration)\$(ProjectName).pdb" />
     </ItemGroup>
-    <Target Name="GlfwWindowCustomTarget" AfterTargets="Build">
-        <Copy SourceFiles="@($(ProjectName)DLL)" DestinationFolder="$(OutDir)" />
+    <Target Name="$(ProjectName)CustomTarget" AfterTargets="Build">
+        <Copy SourceFiles="@(Binaries)" DestinationFolder="$(OutDir)" />
     </Target>
 </Project>
