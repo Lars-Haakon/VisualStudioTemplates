@@ -15,8 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="$(ProjectName).props" />
-    <None Include="$(ProjectName).targets" />
-    <None Include="$(ProjectName).nuspec" />
+    <None Include="DynamicLibrary.nuspec" />
+    <None Include="DynamicLibrary.props" />
+    <None Include="DynamicLibrary.targets" />
   </ItemGroup>
 </Project>

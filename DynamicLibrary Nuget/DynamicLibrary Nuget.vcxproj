@@ -88,9 +88,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="$(ProjectName).nuspec" />
-    <None Include="$(ProjectName).props" />
-    <None Include="$(ProjectName).targets" />
+    <None Include="DynamicLibrary.nuspec" />
+    <None Include="DynamicLibrary.props" />
+    <None Include="DynamicLibrary.targets" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
