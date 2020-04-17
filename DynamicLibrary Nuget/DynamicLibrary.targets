@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <ItemGroup>
-        <Binaries Include="$(MSBuildThisFileDirectory)native\lib\win64\$(Configuration)\$(ProjectName).dll;$(MSBuildThisFileDirectory)native\lib\win64\$(Configuration)\$(ProjectName).pdb" />
+        <Binaries Include="$(MSBuildThisFileDirectory)native\lib\win64\$(Configuration)\$(MSBuildThisFileName).dll;$(MSBuildThisFileDirectory)native\lib\win64\$(Configuration)\$(MSBuildThisFileName).pdb" />
     </ItemGroup>
-    <Target Name="$(ProjectName)CustomTarget" AfterTargets="Build">
+    <Target Name="CustomTarget" AfterTargets="Build">
         <Copy SourceFiles="@(Binaries)" DestinationFolder="$(OutDir)" />
     </Target>
 </Project>

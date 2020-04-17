@@ -20,7 +20,7 @@
 	  <file src="bin\x64\Release\$id$.dll" target="build\native\lib\win64\Release"/>
 	  <file src="bin\x64\Release\$id$.pdb" target="build\native\lib\win64\Release"/>
       <file src="include\**.h" target="build\native\include" />
-	  <file src="DynamicLibrary.props" target="build" />
-	  <file src="DynamicLibrary.targets" target="build" />
+	  <file src="DynamicLibrary.props" target="build/$id$.props" />
+	  <file src="DynamicLibrary.targets" target="build/$id$.targets" />
   </files>
 </package>

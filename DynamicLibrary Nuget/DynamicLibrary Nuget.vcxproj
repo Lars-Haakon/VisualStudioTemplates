@@ -69,6 +69,13 @@
     <Link>
       <SubSystem>Console</SubSystem>
     </Link>
+    <CustomBuildStep>
+      <Command>
+      </Command>
+    </CustomBuildStep>
+    <PreBuildEvent>
+      <Command>nuget pack DynamicLibrary.nuspec -Version 2.5.7 -Properties "id=$(ProjectName);author=Lars;description=Description;repository=&lt;repository type=\"git\" url=\"https://github.com/Lars-Haakon/NorseEngine\" /&gt;;tags=native"</Command>
+    </PreBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
