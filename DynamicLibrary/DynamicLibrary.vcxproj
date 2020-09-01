@@ -60,6 +60,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <AdditionalOptions>/PDBALTPATH:%_PDB%</AdditionalOptions>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
