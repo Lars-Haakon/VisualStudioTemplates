@@ -12,8 +12,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
-    <ProjectGuid>{$guid1$}</ProjectGuid>
-    <RootNamespace>$safeprojectname$</RootNamespace>
+    <ProjectGuid>{8F6485B9-F9A8-4921-8873-EEE964B983C7}</ProjectGuid>
+    <RootNamespace>DynamicLibrary</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -83,8 +83,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="$safeprojectname$.props" />
-    <None Include="$safeprojectname$.targets" />
+    <None Include="DynamicLibrary.props" />
+    <None Include="DynamicLibrary.targets" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

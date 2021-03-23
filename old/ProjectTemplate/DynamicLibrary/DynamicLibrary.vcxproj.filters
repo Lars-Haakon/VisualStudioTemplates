@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="$safeprojectname$.props" />
-    <None Include="$safeprojectname$.targets" />
+    <None Include="DynamicLibrary.props" />
+    <None Include="DynamicLibrary.targets" />
   </ItemGroup>
 </Project>
